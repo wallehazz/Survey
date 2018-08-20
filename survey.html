@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <meta name="author" content="wallehazz">
+    <title>Survey Page</title>
+</head>
+<body>
+    <h1 id="title"> Pour Your Heart Out </h1>
+    <p id="description">We are gonna ask a few questions, looking foward! to your honesty.</p>
+    <form id="survey-form">
+    <span style="color:red;">*</span>  <label for="fname"  id="name-label">Name</label> 
+    <input type="text" id="name" placeholder="what's your name?"  name="fname" required><br><br>
+    <span style="color:red;">*</span>  <label for="email"  id="email-label">Email</label> 
+    <input type="email" id="email" placeholder="what's your Email address?"  name="email" required><br><br>
+    <label for="num"  id="number-label">Number</label> 
+    <input type="number" id="number" placeholder="your digit in binary"  name="num"  min="0" max="1" maxlength="12"><br><br>
+      <label for="num"  id="number-label">What do you do?</label><br><br>
+      <select name="occupations">
+          <option value="student">Student</option>
+          <option value="doctor">Doctor</option>
+          <option value="lawyer">Lawyer</option>
+          <option value="engineer">Engineer</option>
+          <option value="Mechanic">Mechanic</option>
+          <option value="Banker">Banker</option>
+          <option value="Businessman">Hustler</option>
+      </select>
+      <br><br><br><br>
+      How did you hear about us? <br>
+      <input type="radio" name="info">News<br>
+      <input type="radio" name="info">FreeCodeCamp<br>
+      <input type="radio" name="info">Github<br>
+      <br><br><br><br>
+      How likely is it that you would recommend this website?<br>
+      <input type="radio" name="like">Definately<br>
+      <input type="radio" name="like">Maybe<br>
+      <input type="radio" name="like">Never<br><br><br>
+      How many Languages do you speak?<br>
+      <input type="checkbox" value="c" name="c">C<br> 
+      <input type="checkbox" value="Python" name="python">Python<br> 
+      <input type="checkbox" value="java" name="java">Jva<br> 
+      <input type="checkbox" value="Cpp" name="Cpp">C++<br> 
+      <input type="checkbox" value="JAVAs" name="JAvas">Javascript<br> 
+      <input type="checkbox" value="VB" name="vb">Visual Basic<br> 
+      <input type="checkbox" value="Cs" name="cs">C#<br> 
+      <input type="checkbox" value="php" name="php">PHP<br> <br><br>    
+      Any Message<br><br> <textarea name="comment" rows="10" cols="90" placeholder="Enter your comment here . . ."></textarea>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
